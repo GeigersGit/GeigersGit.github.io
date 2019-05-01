@@ -1,6 +1,12 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
 
+@media screen and (max-width: 736px) {
+    #followme {
+        display:none;
+    }
+}
+
 #visualizer:hover {
     background-image:url(../../images/unity-visualizer.gif);
 }
@@ -8,8 +14,6 @@
 .banner {
     padding-top: 200px;
 }
-
-
 
 .outlined {
     border:1px;
