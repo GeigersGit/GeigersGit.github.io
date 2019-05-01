@@ -1,0 +1,152 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brian Geiger - UniVResity</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Banner -->
+            <header class="mainBannerImage" style="background-image:url('images/univresity-wide.png');">
+                <div class="inner">
+
+                    <!--Nav Bar-->
+                    <div id="nav"></div>
+
+                    <!-- Banner Text -->
+                    <div >
+                        <h1>UniVResity</h1>
+                        <hr />
+                        <p>
+                            Professor-led research project combining <br />
+                            augmented reality tech with remote teaching.
+                        </p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div id="main" class="main2">
+                <div class="inner">
+                    <!--Section 1-->
+                    <section>
+                        <h2>About The Project</h2>
+                        <p>
+                            One of the biggest complaints about online classes is the lack of interaction and lack of immersion.
+                            There have been a few attempts to create remote interactive classrooms, including a study in the game
+                            Second Life, as well as various video streaming solutions, but we believe that these aren't really sufficient
+                            to create a truly interactive and immersive experience - one that can impact people's learning in ways watching
+                            a video or reading chat messages just can't. We believe that by using a combination of virtual and augmented
+                            reality technologies, we can create an environment where a student can effortlessly interact with a live
+                            classroom as though they were really there.
+                        </p>
+                        <!--Mid Banner Image-->
+                        <span class="image main">
+                            <img src="images/univresity-multi.gif" />
+                        </span>
+
+                        <p>
+                            As a professor led research project, our large-scale vision was to create a virtual recreation of CSU Monterey
+                            Bay's Business and Information Technology (or BIT) building, and allow a remote student to interact with a class
+                            as though they were a part of it. Ultimately, a student would be able to hear the instructor talk and see them
+                            move around the room, and would be able to be called upon to answer a question by speaking or by writing an answer
+                            on the board just like any other student would. Students would also be able to chat with each other inside the
+                            environment, and would be able to get general responses to common questions from professor "bots" when their real-life
+                            counterparts are unavailable.
+                        </p>
+
+                    </section>
+
+                    <br />
+                    <!--Section 2-->
+                    <section>
+                        <h2>Progress</h2>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/univresity.gif" />
+                                </span>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <p>
+                                    Remote students are able to use virtual reality headsets alongside Leap Motion depth cameras to physically
+                                    write on a shared virtual whiteboard that they, as well as the rest of the real class, can see. They are able
+                                    to hear the instructor and see their relative movements, gestures, and even mouth movements thanks to a
+                                    kinect camera and microphone in the classroom. The instructor can then see a reverse-kinematic animation
+                                    of the remote student as they write on the board, and hear them if they answer a question. The professor
+                                    plans to continue working on the project and hopfully turn it into something practical someday.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section 3-->
+                    <section>
+                        <h2>How It Works</h2>
+
+                        <!--Mid Banner Image-->
+                        <div style="height:326px; overflow:hidden; background-image:url('images/univresity-how.jpeg'); background-position: center; background-repeat:no-repeat;  background-size: cover;" alt=""></div>
+                        <br /><br />
+                        <p>
+                            We had a large headstart with this project due to the fact that a 3D model of our Computer Science building was already
+                            created prior to it's construction. I sourced that model, importing it into unity and making my own
+                            touch-ups, lighting, and corrections. The teacher and student models were created by fellow students,
+                            and the whiteboard is achieved by accessing a collaborative whiteboard site through a web browser plugin
+                            for Unity. The Leap Motion camera then allows me to use the user's hand as a roundabout "mouse" for the browser.
+                        </p>
+
+                    </section>
+
+                    <!--Section 4-->
+                    <section>
+
+                        <!--Mid Banner Image-->
+                        <div style="height:326px; overflow:hidden; background-image:url('images/univresity-desks.jpg'); background-position: center; background-repeat:no-repeat;  background-size: cover;" alt=""></div>
+                        <br /><br />
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/univresity-teacher.gif" />
+                                </span>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/univresity-side-by-side.png" />
+                                </span>
+                            </div>
+                        </div>
+
+                    </section>
+
+                    <span class="image main">
+                        <img src="images/univresity-poster.png" />
+                    </span>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#footer').load("footer.html");
+                $('#nav').load("navbar.html");
+            });
+        </script>
+    </body>
+</html>

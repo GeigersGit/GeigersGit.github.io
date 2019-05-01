@@ -1,0 +1,99 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brian Geiger - Planetlets</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Banner -->
+            <header class="mainBannerImage" style="background-image:url('images/planetlets-big.png');">
+                <div class="inner">
+
+                    <!--Nav Bar-->
+                    <div id="nav"></div>
+
+                    <!-- Banner Text -->
+                    <div >
+                        <h1>Planetlets</h1>
+                        <hr />
+                        <p>A third-person virtual reality shooter that takes place<br /> on miniature planets with simulated spherical gravity.</p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div id="main" class="main2">
+                <div class="inner">
+                    <!--Section 1-->
+                    <section>
+                        <h2>About The Project</h2>
+                        <p>
+                            For my final Game Development class project, I asembled a team of two other programmers and together we created a
+                            multiplayer virtual reality game using Unity and the Oculus Rift headset. Players assume the role of tiny robots
+                            with rocket engines strapped to their backs and rocket pods strapped to their arms and attempt to blow one other up.
+                        </p>
+                        <!--Mid Banner Image-->
+                        <div style="height:326px; overflow:hidden; background-image:url('images/planetlets-bot-wide.png'); background-position: center; background-repeat:no-repeat;  background-size: cover;" alt=""></div>
+
+                    </section>
+
+                    <br />
+                    <!--Section 2-->
+                    <section>
+                        <h2>Progress</h2>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/planetlets-shooting.png" />
+                                </span>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <p>
+                                    At our deadline, we had cobbled together a playable multiplayer game that you could play in virtual reality
+                                    using the Oculus headset and Unity's built in networking system. Players jumped around on the tiny planet
+                                    using their jetpacks and rockets to try to take their opponents out. Extended play would leave you a bit dizzy.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section 3-->
+                    <section>
+                        <h2>How It Works</h2>
+                        <p>
+                            Getting the simulated gravity system to work was probably one of the hardest challenges right alongside the
+                            Oculus functionality. We utilized real gravitational attraction equations, and forcibly rotated the players
+                            each frame so that they would point toward the center of the planet. This made it so that you could fly all
+                            the way around the planet, going upside down and anywhere you wanted, while appearing to remain upright.
+                        </p>  
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#footer').load("footer.html");
+                $('#nav').load("navbar.html");
+            });
+        </script>
+    </body>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brian Geiger - Lightwave</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Banner -->
+            <header class="mainBannerImage" style="background-image:url('images/lightwave-wide.jpg');">
+                <div class="inner">
+
+                    <!--Nav Bar-->
+                    <div id="nav"></div>
+
+                    <!-- Banner Text -->
+                    <div >
+                        <h1>Lightwave</h1>
+                        <hr />
+                        <p>Futuristic endless avoidance runner <br />with musical influence.</p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div id="main" class="main2">
+                <div class="inner">
+                    <!--Section 1-->
+                    <section>
+                        <h2>About The Project</h2>
+                        <p>
+                            "Lightwave", short for "Grandpa Lightwave Drives Through Oncoming Cyberpunk Traffic (Again)" started out as a small
+                            in-class project that grew into a personal side project that I continued working on well after the end of the class.
+                            We were only able to get a basic control scheme and art style down in the short amount of time we had, but I liked
+                            the idea too much to leave it there.
+                            <br /><br />
+                            I wanted to create a fast paced game that focused on speed, music, and difficult to master gameplay. I also wanted 
+                            the game to somehow react to the music I chose to put in, so I imported some of the code from my music visualization
+                            project and used it to animate the texture on the walls, making them glow with the intensity of the average volume 
+                            of the currently playing song.
+                        </p>
+                    </section>
+
+                    <br />
+                    <!--Section 2-->
+                    <section>
+                        <h2>Progress</h2>
+                        <div class="row">
+                            <div class="col-7 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/lightwave.gif" />
+                                </span>
+                            </div>
+                            <div class="col-5 col-12-medium">
+                                <p>
+                                    In its current state, the game is a simple endless runner where you roll left and right using the movement 
+                                    of your mouse and propell yourself upward in whatever direction you're facing using your bottom thrusters. The 
+                                    goal is to make it as far as you can without running into any of the oncoming traffic.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section 3-->
+                    <section>
+                        <h2>How It Works</h2>
+                        <span class="image main">
+                            <img src="images/lightwave-how.png" />
+                        </span>
+                        <p>
+                            I quickly learned that Unity does not like when things go fast, and that the collision physics start to become
+                            more and more unpredictable the faster you go. This forced me to get creative in how I achieved the illusion of
+                            speed, choosing to animate the texture on the walls instead of physically moving anything besides the lateral
+                            movement of the ship, and the backwards movement of the oncoming traffic.
+                        </p>
+                            
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#footer').load("footer.html");
+                $('#nav').load("navbar.html");
+            });
+        </script>
+    </body>
+</html>

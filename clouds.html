@@ -1,0 +1,116 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brian Geiger - Voxel Clouds</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Banner -->
+            <header class="mainBannerImage" style="background-image:url('images/clouds-dark.jpg');">
+                <div class="inner">
+
+                    <!--Nav Bar-->
+                    <div id="nav"></div>
+
+                    <!-- Banner Text -->
+                    <div >
+                        <h1>Voxel Clouds</h1>
+                        <hr />
+                        <p>Voxel-based volumetric clouds rendered<br /> with DirectX.</p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div id="main" class="main2">
+                <div class="inner">
+                    <!--Section 1-->
+                    <section>
+                        <h2>About The Project</h2>
+                        <p>
+                            As a final project for my DirectX class, myself and a small group of peers decided to try to emulate high-end cloud
+                            effects using voxels and billboards. The idea was to use voxels, or virtual boxes, to give each cloud a sense of volume.
+                            Light coming through would pass through each box and dim itself based on how many boxes it passed through, creating the
+                            effect of depth. Billboards would be scattered throughout the volume of the cloud to give it a visible texture. 
+                            Normally you would have to use a large amount of billboards to achieve the same effect, which is extremely inefficient
+                            in the usual case where you have many clouds in your sky.
+                            <br />
+                            My role during this project was to develop a custom Perlin noise algorithm to scatter the billboards throughout the cloud.
+                            I was also responsible for scattering the individual clouds throughout the sky with a similar algorithm.
+                        </p>
+                        <!--Mid Banner Image-->
+                        <div style="height:326px; overflow:hidden; background-image:url('images/clouds-big.jpg'); background-position: center; background-repeat:no-repeat;  background-size: cover;" alt=""></div>
+
+                    </section>
+
+                    <br />
+                    <!--Section 2-->
+                    <section>
+                        <h2>Progress</h2>
+                        <div class="row">
+                            <div class="col-8 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/clouds.gif" />
+                                </span>
+                            </div>
+                            <div class="col-4 col-12-medium">
+                                <p>
+                                    With what little time we had to achieve this goal, we managed to create a decent looking result that
+                                    implemented the voxel method, as well as a few custom-made post process effects, such as dynamic and 
+                                    atmospheric lighting, scattering, and bloom.
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section 3-->
+                    <section>
+                        <h2>How It Works</h2>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <p>
+                                    Pictured here are the individual voxels rendered in green. The brightness of each ray of light is reduced by a
+                                    scalar amount when passing through any one of the boxes. In order to achieve simulated perlin noise to place the
+                                    billboards around these boxes, I created a simple 2D noise function that finds two noise numbers based on an x
+                                    and y position. I then gather a few of the noise points around that position and use an interpolate function to
+                                    smooth them out. This results in a smooth, turbulent, and random distribution.
+                                </p>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/clouds-how.jpg" />
+                                </span>
+                            </div>
+                        </div>
+                        
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#footer').load("footer.html");
+                $('#nav').load("navbar.html");
+            });
+        </script>
+    </body>
+</html>
