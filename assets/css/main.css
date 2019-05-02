@@ -5,20 +5,10 @@
     #followme {
         display:none;
     }
-}
+    h1 {
+        padding-top:100px !important;
+    }
 
-#visualizer:hover {
-    background-image:url(../../images/unity-visualizer.gif);
-}
-
-.banner {
-    padding-top: 200px;
-}
-
-.outlined {
-    border:1px;
-    border-color:white;
-    border-radius:10px;
 }
 
 .mainBannerImage {
@@ -29,11 +19,14 @@
 
 h1 {
     margin-bottom: 0em !important;
-    font-size: 3em !important;
+    font-size: 3em;
     letter-spacing: 0.1em !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
-    padding-top:200px !important;
+    padding-top: 200px;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
 h2 {
@@ -81,7 +74,7 @@ section p {
 */
 
 html, body, div, span, applet, object,
-iframe, h1, h2, h3, h4, h5, h6, p, blockquote,
+iframe, h2, h3, h4, h5, h6, p, blockquote,
 pre, a, abbr, acronym, address, big, cite,
 code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b,
