@@ -14,13 +14,13 @@
 
             <!-- Banner -->
             <header class="mainBannerImage" style="background-image:url('images/swordfighting-env.jpg');">
-                <div class="inner">
+                <div class="inner hidden">
 
                     <!--Nav Bar-->
                     <div id="nav"></div>
 
                     <!-- Banner Text -->
-                    <div >
+                    <div>
                         <h1>Motion Capture Sword Fighting</h1>
                         <hr />
                         <p>Class-wide, semester-long project that attempted to <br />combine mobile-powered VR with motion capture suits.</p>
@@ -31,7 +31,7 @@
 
             <!-- Main -->
             <div id="main" class="main2">
-                <div class="inner">
+                <div class="inner hidden">
                     <!--Section 1-->
                     <section>
                         <h2>About The Project</h2>
@@ -39,7 +39,7 @@
                             One of the classes I attended while at CSUMB was an "Advanced Unity Topics" course which was essentially a semester-long project
                             that everyone in the class would contribute toward. The idea, pitched by the professor, was to create a multiplayer sword fighting
                             game using Axis Neuron Motion-Capture suits and Samsung GearVR Virtual Reality headsets. While more of a tech-demo than a fully
-                            featured game, the project was sucessfully implemented and was a stunning centerpiece at our university' showcase event. 
+                            featured game, the project was sucessfully implemented and was a stunning centerpiece at our university' showcase event.
                             Unfortunately, I failed to get any good footage of it going when it was all set up.
                             <br /><br />
                             My role in the project was to modify the Axis Nuron suit's Unity API to work with the mobile Android platform we were using. The android-powered
@@ -61,8 +61,8 @@
                             </div>
                             <div class="col-4 col-12-medium">
                                 <p>
-                                    At the end of the semester, we had created a surprisingly impressive demonstration of real time motion tracking on the 
-                                    Android platform. Both players, dressed in motion-sensor-covered gear, could join the game and use their body and arm 
+                                    At the end of the semester, we had created a surprisingly impressive demonstration of real time motion tracking on the
+                                    Android platform. Both players, dressed in motion-sensor-covered gear, could join the game and use their body and arm
                                     motion to naturally slash and poke and each other from fighting distance in game, and from a safe distance in real life.
                                     The one problem we didn't get to solve was handling sword strikes, and what should happen if the virtual swords touch.
                                 </p>
@@ -106,11 +106,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#footer').load("footer.html");
-                $('#nav').load("navbar.html");
-            });
-        </script>
+        <script src="assets/js/myjs.js"></script>
     </body>
 </html>

@@ -14,13 +14,13 @@
 
             <!-- Banner -->
             <header class="mainBannerImage" style="background-image:url('images/lightwave-wide.jpg');">
-                <div class="inner">
+                <div class="inner hidden">
 
                     <!--Nav Bar-->
                     <div id="nav"></div>
 
                     <!-- Banner Text -->
-                    <div >
+                    <div>
                         <h1>Lightwave</h1>
                         <hr />
                         <p>Futuristic endless avoidance runner <br />with musical influence.</p>
@@ -31,7 +31,7 @@
 
             <!-- Main -->
             <div id="main" class="main2">
-                <div class="inner">
+                <div class="inner hidden">
                     <!--Section 1-->
                     <section>
                         <h2>About The Project</h2>
@@ -41,9 +41,9 @@
                             We were only able to get a basic control scheme and art style down in the short amount of time we had, but I liked
                             the idea too much to leave it there.
                             <br /><br />
-                            I wanted to create a fast paced game that focused on speed, music, and difficult to master gameplay. I also wanted 
+                            I wanted to create a fast paced game that focused on speed, music, and difficult to master gameplay. I also wanted
                             the game to somehow react to the music I chose to put in, so I imported some of the code from my music visualization
-                            project and used it to animate the texture on the walls, making them glow with the intensity of the average volume 
+                            project and used it to animate the texture on the walls, making them glow with the intensity of the average volume
                             of the currently playing song.
                         </p>
                     </section>
@@ -60,8 +60,8 @@
                             </div>
                             <div class="col-5 col-12-medium">
                                 <p>
-                                    In its current state, the game is a simple endless runner where you roll left and right using the movement 
-                                    of your mouse and propell yourself upward in whatever direction you're facing using your bottom thrusters. The 
+                                    In its current state, the game is a simple endless runner where you roll left and right using the movement
+                                    of your mouse and propell yourself upward in whatever direction you're facing using your bottom thrusters. The
                                     goal is to make it as far as you can without running into any of the oncoming traffic.
                                 </p>
                             </div>
@@ -79,7 +79,7 @@
                             speed, choosing to animate the texture on the walls instead of physically moving anything besides the lateral
                             movement of the ship, and the backwards movement of the oncoming traffic.
                         </p>
-                            
+
                     </section>
 
                 </div>
@@ -96,11 +96,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#footer').load("footer.html");
-                $('#nav').load("navbar.html");
-            });
-        </script>
+        <script src="assets/js/myjs.js"></script>
     </body>
 </html>

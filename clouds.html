@@ -14,13 +14,13 @@
 
             <!-- Banner -->
             <header class="mainBannerImage" style="background-image:url('images/clouds-dark.jpg');">
-                <div class="inner">
+                <div class="inner hidden">
 
                     <!--Nav Bar-->
                     <div id="nav"></div>
 
                     <!-- Banner Text -->
-                    <div >
+                    <div>
                         <h1>Voxel Clouds</h1>
                         <hr />
                         <p>Voxel-based volumetric clouds rendered<br /> with DirectX.</p>
@@ -31,7 +31,7 @@
 
             <!-- Main -->
             <div id="main" class="main2">
-                <div class="inner">
+                <div class="inner hidden">
                     <!--Section 1-->
                     <section>
                         <h2>About The Project</h2>
@@ -39,7 +39,7 @@
                             As a final project for my DirectX class, myself and a small group of peers decided to try to emulate high-end cloud
                             effects using voxels and billboards. The idea was to use voxels, or virtual boxes, to give each cloud a sense of volume.
                             Light coming through would pass through each box and dim itself based on how many boxes it passed through, creating the
-                            effect of depth. Billboards would be scattered throughout the volume of the cloud to give it a visible texture. 
+                            effect of depth. Billboards would be scattered throughout the volume of the cloud to give it a visible texture.
                             Normally you would have to use a large amount of billboards to achieve the same effect, which is extremely inefficient
                             in the usual case where you have many clouds in your sky.
                             <br />
@@ -64,7 +64,7 @@
                             <div class="col-4 col-12-medium">
                                 <p>
                                     With what little time we had to achieve this goal, we managed to create a decent looking result that
-                                    implemented the voxel method, as well as a few custom-made post process effects, such as dynamic and 
+                                    implemented the voxel method, as well as a few custom-made post process effects, such as dynamic and
                                     atmospheric lighting, scattering, and bloom.
                                 </p>
                             </div>
@@ -89,7 +89,7 @@
                                 </span>
                             </div>
                         </div>
-                        
+
                     </section>
 
                 </div>
@@ -106,11 +106,6 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            $(document).ready(function(){
-                $('#footer').load("footer.html");
-                $('#nav').load("navbar.html");
-            });
-        </script>
+        <script src="assets/js/myjs.js"></script>
     </body>
 </html>

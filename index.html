@@ -13,11 +13,11 @@
         <div id="wrapper">
 
             <!-- Banner -->
-            <header>
-                <div class="inner">
+            <header class="mainBannerImage" style="background-image:url('images/main-banner-blue-bars.png');">
+                <div class="inner hidden">
 
                     <!--Nav Bar-->
-                    <div id="nav"></div>
+                    <div id="nav" ></div>
 
                     <!-- Banner Text -->
                     <div>
@@ -37,18 +37,18 @@
                 <div class="inner">
                     <!-- Tile Section -->
                     <div class="tiles">
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/univresity.png" alt="" />
                             </span>
                             <a href="univresity.html">
-                                <h2>UniVResity</h2>
+                                <h2 style="position:relative !important; z-index:1 !important;">UniVResity</h2>
                                 <div class="content">
                                     <p>The virtual reality classroom experience. Interact with your class from home.</p>
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/unity-visualizer.png" alt="" />
                             </span>
@@ -59,7 +59,7 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/lightwave.png" alt="" />
                             </span>
@@ -70,7 +70,7 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/unwelcome.png" alt="" />
                             </span>
@@ -81,7 +81,7 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/planetlets.png" alt="" />
                             </span>
@@ -92,7 +92,7 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/csumbtours.jpg" alt="" />
                             </span>
@@ -103,7 +103,7 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/clouds.png" alt="" />
                             </span>
@@ -114,7 +114,7 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+                        <article class="shadowAnimate">
                             <span class="image">
                                 <img src="images/swordfighting.png" alt="" />
                             </span>
@@ -125,7 +125,17 @@
                                 </div>
                             </a>
                         </article>
-                        <article class="">
+
+                        <!--
+                            
+                        Arduino?
+                        Turtle Tribes?
+                        Unreal Level Design?
+
+
+                        -->
+
+                        <!--<article class="">
                             <span class="image">
                                 <img src="images/turtletribes.jpg" alt="" />
                             </span>
@@ -135,7 +145,7 @@
                                     <p>An homage to one of the greatest games about going fast, but with turtles.</p>
                                 </div>
                             </a>
-                        </article>
+                        </article>-->
 
                     </div>
                 </div>
@@ -152,12 +162,7 @@
         <script src="assets/js/breakpoints.min.js"></script>
         <script src="assets/js/util.js"></script>
         <script src="assets/js/main.js"></script>
-        <script>
-            $(document).ready(function(){
-               $('#footer').load("footer.html");
-               $('#nav').load("navbar.html");
-            });
-        </script>
+        <script src="assets/js/myjs.js"></script>
 
     </body>
 </html>
