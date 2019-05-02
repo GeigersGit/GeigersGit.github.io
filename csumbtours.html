@@ -1,0 +1,113 @@
+﻿<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Brian Geiger - CSUMB GPS</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+    <body class="is-preload">
+        <!-- Wrapper -->
+        <div id="wrapper">
+
+            <!-- Banner -->
+            <header class="mainBannerImage" style="background-image:url('images/csumbtours-wide.png');">
+                <div class="inner">
+
+                    <!--Nav Bar-->
+                    <div id="nav"></div>
+
+                    <!-- Banner Text -->
+                    <div >
+                        <h1>CSUMB GPS</h1>
+                        <hr />
+                        <p>First-prize-winning hackathon mobile app<br /> that helps new CSUMB students get around.</p>
+                    </div>
+
+                </div>
+            </header>
+
+            <!-- Main -->
+            <div id="main" class="main2">
+                <div class="inner">
+                    <!--Section 1-->
+                    <section>
+                        <h2>About The Project</h2>
+                        <p>
+                            CSUMB hosted its own hackathon in November 2016, and the theme was solving community problems using "games". My idea was to use
+                            the Unity Game Engine to create an interactive map of the campus with simple GPS functions to help new students find their
+                            way around. I still think I cheated a little since what I created wasn't a game by any stretch of the imagination, but i'd 
+                            like to think it turned out a fair bit more helpful than if I had actually tried to shoehorn it into a game. The hackathon lasted 
+                            two days - and as I awkwardly sputter in the local news real, it ended up being an all-nighter. Dispite that, it was genuinely one
+                            of the most fun experiences I've had at a hackathon regardless of whether we won or not.
+                        </p>
+                    </section>
+                    <div class="video-container">
+                        <iframe width="100%" src="https://www.ksbw.com/article/students-tackle-community-problems-with-gaming-at-csumb-s-hackathon/8252692"></iframe>
+                    </div>
+                    <br />
+                    <!--Section 2-->
+                    <section>
+                        <h2>Progress</h2>
+                        <div class="row">
+                            <div class="col-6 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/csumbtours-progress.gif" />
+                                </span>
+                            </div>
+                            <div class="col-6 col-12-medium">
+                                <p>
+                                    The app ended up having two main "modes" - The first was simple navigation mode that took your current location and desired building
+                                    and gave you a little arrow telling you which way to go. The second was a "tour" mode that navigated you to the student center in
+                                    the middle of campus, then navigated you to all of the points of interest on campus, giving you a little popup of info about 
+                                    each one as you arrive at them.
+
+                                </p>
+                            </div>
+                        </div>
+                    </section>
+                    <!--Section 3-->
+                    <section>
+                        <h2>How It Works</h2>
+                        <div class="row">
+                            <div class="col-4 col-12-medium">
+                                <p>
+                                    We first thought it would be useful to just use a google maps map of the campus to base the app on, but we quickly burned that
+                                    bridge, as accidentally accessing the google maps API 60 times per second got us blacklisted pretty quick. We then decided the
+                                    next best thing was to just create our own map and calibrate the scale ourselves. We also created loose 3D models
+                                    of each building to help identify them. The hard part was accessing the phone's GPS position and calibrating that with our handmade
+                                    map. It took a fair amount of trial and error - running outside and accross campus at 3AM to see if it was accurately following us.
+                                </p>
+                            </div>
+                            <div class="col-8 col-12-medium">
+                                <span class="image main">
+                                    <img src="images/csumbtours-map.png" />
+                                </span>
+                            </div>
+                        </div>
+                    </section>
+
+                </div>
+            </div>
+
+            <!-- Footer -->
+            <footer id="footer"></footer>
+
+        </div>
+
+        <!-- Scripts -->
+        <script src="assets/js/jquery.min.js"></script>
+        <script src="assets/js/browser.min.js"></script>
+        <script src="assets/js/breakpoints.min.js"></script>
+        <script src="assets/js/util.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script>
+            $(document).ready(function(){
+                $('#footer').load("footer.html");
+                $('#nav').load("navbar.html");
+            });
+        </script>
+    </body>
+</html>
