@@ -32,7 +32,7 @@
 .navbar-background {
     background-color: rgb(21,21,21);
     position: fixed;
-    height: 50px;
+    height: 55px;
     left: 0;
     right: 0;
     z-index: 2;
@@ -3375,7 +3375,7 @@ input, select, textarea {
     @media screen and (max-width: 736px) {
 
         #footer {
-            padding: 3em 0 1em 0;
+            padding: 3em 0 3em 0;
         }
 
             #footer > .inner {
