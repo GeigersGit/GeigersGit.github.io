@@ -1,109 +1,112 @@
 ﻿<!DOCTYPE HTML>
 <html>
-	<head>
-		<title>Brian Geiger - 3D Music Visualizer</title>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
-	</head>
+<head>
+    <title>Brian Geiger - 3D Music Visualizer</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
 
-    <body class="is-preload">
-        <!-- Wrapper -->
-        <div id="wrapper">
+<body class="is-preload">
+    <!-- Wrapper -->
+    <div id="wrapper">
 
-            <!-- Banner -->
-            <header class="mainBannerImage" style="background-image:url('images/unity-visualizer-big.png');">
-                <div class="inner hidden">
+        <!-- Banner -->
+        <header class="mainBannerImage" style="background-image:url('images/unity-visualizer-big.png');">
+            <div class="inner hidden">
 
-                    <!--Nav Bar-->
-                    <div id="nav"></div>
+                <!--Nav Bar-->
+                <div id="nav"></div>
 
-                    <!-- Banner Text -->
-                    <div>
-                        <h1>3D Music Visualizer</h1>
-                        <hr />
-                        <p>Side project combining real time <br />spectrum analysis with 3D rendering</p>
-                    </div>
-
+                <!-- Banner Text -->
+                <div>
+                    <h1>3D Music Visualizer</h1>
+                    <hr />
+                    <p>
+                        Side project combining real time <br />
+                        spectrum analysis with 3D rendering
+                    </p>
                 </div>
-            </header>
 
-            <!-- Main -->
-            <div id="main" class="main2">
-                <div class="inner hidden">
-                    <!--Section 1-->
-                    <section >
-                        <h2>About The Project</h2>
-                        <p>
-                            One thing that's always facinated me is music visualization.<br /><br />
-                            Being able to experience music with more than just our sense of sound and touch is crazy and mesmerizing to me.
-                            Dispite my fascination, I always found myself disappointed by the ones that were available, as
-                            visualizers that rendered in real time weren't especially appealing to look at,
-                            and the ones that were visually stunning were usually After Effects animations that took hours to render for a single song.
-                            The Unity game engine provided the perfect environment for rendering something like that in real time.
-                        </p>
-                        <!--Mid Banner Image-->
-                        <div style="height:326px; overflow:hidden; background-image:url('images/unity-visualizer.gif'); background-position: center; background-repeat:no-repeat;  background-size: cover;" alt=""></div>
-
-                    </section>
-
-                    <br />
-                    <!--Section 2-->
-                    <section>
-                        <h2>Progress</h2>
-                        <div class="row">
-                            <div class="col-6 col-12-medium">
-                                <div class="video-container">
-                                    <iframe width="853" height="480" src="https://www.youtube.com/embed/VVrf89SXvTM" frameborder="0" allowfullscreen></iframe>
-                                </div>
-                                <br />
-                            </div>
-                            <div class="col-6 col-12-medium">
-                                <p>
-                                    Version one of the visualizer, which can be found <a href="https://www.youtube.com/watch?v=82Q6DRqf9H4" style="color:pink;">here</a>,
-                                    was published on YouTube in March of 2014 and currently has about three quarters of a million views.
-                                    After a bunch of tinkering and user feedback, version two (seen here) was uploaded a few months later in August.
-                                    Since then, a few other features have been included and a handful of custom versions have been contracted for small-scale streamers and
-                                    artists.
-                                </p>
-                            </div>
-                        </div>
-                    </section>
-                    <!--Section 3-->
-                    <section>
-                        <h2>How It Works</h2>
-                        <div class="row">
-                            <div class="col-4 col-12-medium">
-                                <p>
-                                    An array of frequencies is brought in each frame using a fourier transform library,
-                                    assigned to one of 64 bar groups, averaged with the rest of the frequencies in the group, and assigned as a
-                                    height value to one of the bars of the visualizer. A layer of water is placed to hide the bottom half of the
-                                    bars and let the light emitted by the bars reflect into the camera.
-                                </p>
-                            </div>
-                            <div class="col-8 col-12-medium">
-                                <span class="image main">
-                                    <img src="images/unity-visualizer-how.jpg" />
-                                </span>
-                            </div>
-                        </div>
-                    </section>
-
-                </div>
             </div>
+        </header>
 
-            <!-- Footer -->
-            <footer id="footer"></footer>
+        <!-- Main -->
+        <div id="main" class="main2">
+            <div class="inner hidden">
+                <!--Section 1-->
+                <section>
+                    <h2>About The Project</h2>
+                    <p>
+                        One thing that's always facinated me is music visualization.<br /><br />
+                        Being able to experience music with more than just our sense of sound and touch is crazy and mesmerizing to me.
+                        Dispite my fascination, I always found myself disappointed by the ones that were available, as
+                        visualizers that rendered in real time weren't especially appealing to look at,
+                        and the ones that were visually stunning were usually After Effects animations that took hours to render for a single song.
+                        The Unity game engine provided the perfect environment for rendering something like that in real time.
+                    </p>
+                    <!--Mid Banner Image-->
+                    <div class="bannerImage" style="height:326px; background-image:url('images/unity-visualizer.gif'); overflow:hidden; background-position: center; background-repeat:no-repeat;  background-size: cover;" alt=""></div>
 
+                </section>
+
+                <br />
+                <!--Section 2-->
+                <section>
+                    <h2>Progress</h2>
+                    <div class="row">
+                        <div class="col-6 col-12-medium">
+                            <div class="video-container">
+                                <iframe width="853" height="480" src="https://www.youtube.com/embed/VVrf89SXvTM" frameborder="0" allowfullscreen></iframe>
+                            </div>
+                            <br />
+                        </div>
+                        <div class="col-6 col-12-medium">
+                            <p>
+                                Version one of the visualizer, which can be found <a href="https://www.youtube.com/watch?v=82Q6DRqf9H4" style="color:pink;">here</a>,
+                                was published on YouTube in March of 2014 and currently has about three quarters of a million views.
+                                After a bunch of tinkering and user feedback, version two (seen here) was uploaded a few months later in August.
+                                Since then, a few other features have been included and a handful of custom versions have been contracted for small-scale streamers and
+                                artists.
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                <!--Section 3-->
+                <section>
+                    <h2>How It Works</h2>
+                    <div class="row">
+                        <div class="col-4 col-12-medium">
+                            <p>
+                                An array of frequencies is brought in each frame using a fourier transform library,
+                                assigned to one of 64 bar groups, averaged with the rest of the frequencies in the group, and assigned as a
+                                height value to one of the bars of the visualizer. A layer of water is placed to hide the bottom half of the
+                                bars and let the light emitted by the bars reflect into the camera.
+                            </p>
+                        </div>
+                        <div class="col-8 col-12-medium">
+                            <span class="image main">
+                                <img src="images/unity-visualizer-how.jpg" />
+                            </span>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
         </div>
 
-        <!-- Scripts -->
-        <script src="assets/js/jquery.min.js"></script>
-        <script src="assets/js/browser.min.js"></script>
-        <script src="assets/js/breakpoints.min.js"></script>
-        <script src="assets/js/util.js"></script>
-        <script src="assets/js/main.js"></script>
-        <script src="assets/js/myjs.js"></script>
-    </body>
+        <!-- Footer -->
+        <footer id="footer"></footer>
+
+    </div>
+
+    <!-- Scripts -->
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/browser.min.js"></script>
+    <script src="assets/js/breakpoints.min.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/main.js"></script>
+    <script src="assets/js/myjs.js"></script>
+</body>
 </html>
