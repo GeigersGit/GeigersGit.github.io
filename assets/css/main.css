@@ -8,8 +8,11 @@
     h1 {
         padding-top:100px !important;
     }
-
+    .hidden-sm {
+        display: none;
+    }
 }
+
 
 .image {
     z-index: 2;
@@ -72,20 +75,20 @@
     -ms-transition: opacity 0.3s ease;
     transition: opacity 0.3s ease;
     width: 100%;
-    max-width: 68em;
+    max-width: 80em;
     padding-right: 5em;
 }
 
 .mainBannerImage {
-    background-position: bottom;
+    background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    /*box-shadow: 0px 10px 20px rgba(0,0,0,0.5);*/
+    box-shadow: 0px 10px 20px rgba(21,21,21,1);
     /*z-index: 2;
     position: relative;*/
     /*background: linear-gradient(to bottom, transparent, mistyrose);*/
-    background-color: rgba(0,0,0,.3);
-    background-blend-mode: multiply;
+    /*background-color: rgba(0,0,0,.3);
+    background-blend-mode: multiply;*/
 }
 
 
@@ -95,7 +98,7 @@ h1 {
     letter-spacing: 0.1em !important;
     font-weight: bold !important;
     text-transform: uppercase !important;
-    padding-top: 200px;
+    padding-top: 250px;
     font-size: 100%;
     font: inherit;
     vertical-align: baseline;
@@ -2956,7 +2959,7 @@ body {
 /* Header */
 
         header {
-            padding-bottom: 6em;
+            padding-bottom: 4em;
         }
         @media screen and (max-width: 736px) {
             header {
@@ -3285,7 +3288,7 @@ body {
     /* Main */
 
     #main {
-        padding: 6em 0 6em 0;
+        padding: 4em 0 6em 0;
         /*background-image: url(../../images/tile.png);
         background-repeat: repeat;*/
     }
@@ -3297,7 +3300,7 @@ body {
     @media screen and (max-width: 736px) {
 
         #main {
-            padding: 0em 0 4em 0;
+            padding: 2em 0 4em 0;
         }
 
         .main2 {
@@ -3371,7 +3374,7 @@ body {
     @media screen and (max-width: 1280px) {
 
         #footer {
-            padding: 5em 0 3em 0;
+            padding: 5em 0 5em 0;
         }
 
             #footer > .inner section:nth-child(1) {
@@ -3401,7 +3404,7 @@ body {
     @media screen and (max-width: 736px) {
 
         #footer {
-            padding: 3em 0 3em 0;
+            padding: 3em 0 5em 0;
         }
 
             #footer > .inner {
@@ -3454,7 +3457,7 @@ body {
 
     #wrapper > * > .inner {
         width: 100%;
-        max-width: 68em;
+        max-width: 80em;
         margin: 0 auto;
         padding: 0 2.5em;
     }
