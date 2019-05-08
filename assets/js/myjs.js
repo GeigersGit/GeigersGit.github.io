@@ -7,17 +7,17 @@ $(document).ready(function () {
 $(window).scroll(function () {
     var ScrollTop = parseInt($(window).scrollTop());
     //console.log(scroll);
-    var popPoint = 600;
+    var popPoint = 550;
     var width = $(window).width();
 
     if (width <= 1668) {
-        popPoint = 550;
-    }
-    if (width <= 1269) {
         popPoint = 500;
     }
+    if (width <= 1269) {
+        popPoint = 450;
+    }
     if (width <= 726) {
-        popPoint = 325;
+        popPoint = 350;
     }
 
     if (ScrollTop > popPoint) {
