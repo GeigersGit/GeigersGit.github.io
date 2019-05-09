@@ -13,6 +13,9 @@
     }
 }
 
+section {
+    padding-top:50px !important;
+}
 
 .image {
     z-index: 2;
