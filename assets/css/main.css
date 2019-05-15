@@ -1,5 +1,13 @@
 @import url(font-awesome.min.css);
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,700,900");
+@import url("https://fonts.googleapis.com/css?family=Vibur");
+@font-face {
+    font-family: 'neon_tubes_2regular';
+    src: url('../fonts/neontubes2-regular-webfont.woff2') format('woff2'), url('../fonts/neontubes2-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 @media screen and (max-width: 736px) {
     #followme {
@@ -10,6 +18,208 @@
     }
     .hidden-sm {
         display: none;
+    }
+}
+
+
+.logo {
+    text-transform:none !important;
+    padding-top:150px !important;
+}
+
+.logo b {
+    font: 100 1.5em "neon_tubes_2regular";
+    color: #b7dff8;
+    /*text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #17f, 0 0 0.5em #17f, 0 0 0.1em #17f, 0 10px 3px #000;*/
+}
+
+.logo b span {
+    animation: sign2 linear infinite 3s;
+    
+}
+
+.logo b span:first-child {
+    animation: sign1 linear infinite 3s !important;
+}
+
+
+@keyframes sign1 {
+    0% {
+        color: #333;
+        text-shadow: 0 10px 3px #000;
+    }
+
+    1% {
+        color: inherit;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #17f, 0 0 0.5em #17f, 0 0 0.1em #17f, 0 10px 3px #000;
+    }
+
+    42% {
+        color: inherit;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #17f, 0 0 0.5em #17f, 0 0 0.1em #17f, 0 10px 3px #000;
+    }
+
+    45% {
+        color: #333;
+        text-shadow: 0 10px 3px #000;
+    }
+
+
+    99% {
+        color: #333;
+        text-shadow: 0 10px 3px #000;
+    }
+
+    
+}
+
+@keyframes sign2 {
+    0% {
+        color: #333;
+        text-shadow: 0 10px 3px #000;
+    }
+
+    42% {
+        color: #333;
+        text-shadow: 0 10px 3px #000;
+    }
+
+    45% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f44, 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+    }
+
+    94% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f44, 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000;
+    }
+
+    97% {
+        color: #333;
+        text-shadow: 0 10px 3px #000;
+    }
+
+    100% {
+        color: #444;
+        text-shadow: 0 10px 3px #000;
+    }
+}
+
+@keyframes blink {
+
+
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    79% {
+        color: #333;
+    }
+    80% {
+        text-shadow: none;
+    }
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    95% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    95.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    98% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    98.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+
+.chromatic-text {
+    text-shadow: 3px 0px 1px #ff0000, -3px -0px 1px #0079ff, 0px -2px 1px green !important;
+    animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
+}
+
+/*h1 {
+    text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),-3px 0px 2px rgba(12, 230, 251,1);
+    animation: chromaticMove 4500ms ease infinite,pulse ease 200ms infinite;
+}*/
+
+@keyframes gradientMove {
+    0% {
+        background-size: 100% 4px
+    }
+
+    50% {
+        background-size: 100% 2px
+    }
+
+    100% {
+        background-size: 100% 4px
+    }
+}
+
+@keyframes pulse {
+    0% {
+        opacity: .9;
+        transform: skewX(.5deg);
+    }
+
+    25% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: .9;
+    }
+
+    75% {
+        opacity: 1;
+        transform: skewX(.5deg);
+    }
+
+    100% {
+        opacity: .9;
+    }
+}
+
+@keyframes chromaticMove {
+    0% {
+        text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),0px 0px -2px rgba(12, 230, 251,1);
+    }
+
+    50% {
+        text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),-3px 2px 3px rgba(12, 230, 251,1);
+    }
+
+    100% {
+        text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),2px -1px 2px rgba(12, 230, 251,1);
     }
 }
 
@@ -94,7 +304,7 @@ h1 {
     margin-bottom: 0em !important;
     font-size: 3em;
     letter-spacing: 0.1em !important;
-    font-weight: bold !important;
+    font-weight: normal !important;
     text-transform: uppercase !important;
     padding-top: 200px;
     font-size: 100%;
@@ -109,7 +319,7 @@ h2 {
 }
 
 p {
-    letter-spacing: 0.04em;
+    letter-spacing: 0.1em;
     text-shadow: 1px 2px 1px black;
 }
 
