@@ -63,21 +63,4 @@ var last = document.getElementById("lastName");
 //    setTimeout(step1, 1500);
 //}
 
-function step1() {
-    first.classList.remove("neon-blue")
-    first.classList.add("neon-grey");
-    setTimeout(step2, 1300);
-    last.classList.remove("neon-blue")
-    last.classList.add("neon-grey");
-
-}
-
-function step2() {
-    last.classList.remove("neon-grey")
-    last.classList.add("neon-blue");
-    setTimeout(step1, 2500);
-    first.classList.remove("neon-grey")
-    first.classList.add("neon-blue");
-}
-
 
