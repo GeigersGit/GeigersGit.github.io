@@ -46,6 +46,11 @@ h1 {
     animation: blink linear 4s infinite;
 }
 
+.neon-red-stable {
+    color: #eee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff389e, 0 0 0.5em #ff389e, 0 0 0.1em #ff389e, 0 10px 3px #000;
+}
+
 .neon-blue {
     /*color: #b7dff8 !important;*/
     color: #eee;
@@ -53,7 +58,7 @@ h1 {
 }
 
 
-.neon-blue .flicker, .neon-red .flicker {
+.flicker {
     animation: flicker ease 200ms infinite;
 }
 
