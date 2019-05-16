@@ -43,7 +43,7 @@ h1 {
 .neon-red {
     color: #eee;
     text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff389e, 0 0 0.5em #ff389e, 0 0 0.1em #ff389e, 0 10px 3px #000;
-    animation: blink linear 4s infinite;
+    animation: blink linear 4s;
 }
 
 .neon-red-stable {
@@ -90,15 +90,18 @@ h1 {
     58.5% { color: #eee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff389e, 0 0 0.5em #ff389e, 0 0 0.1em #ff389e, 0 10px 3px #000; }
     59.5% { color: #eee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff389e, 0 0 0.5em #ff389e, 0 0 0.1em #ff389e, 0 10px 3px #000; }
     60%   { color: #444; text-shadow: none; }
+    93%   { color: #444; text-shadow: none; }
+    94%   { color: #eee; text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff389e, 0 0 0.5em #ff389e, 0 0 0.1em #ff389e, 0 10px 3px #000; }
+    95%   { color: #444; text-shadow: none; }
     99%   { color: #444; text-shadow: none; }
 }
 
 @keyframes flicker {
-    0% { opacity: .75; transform: skewX(.5deg); }
+    0% { opacity: .85; transform: skewX(.5deg); }
     25% { opacity: 1; }
-    50% { opacity: .75; }
+    50% { opacity: .85; }
     75% { opacity: 1; transform: skewX(.5deg); }
-    100% { opacity: .75; }
+    100% { opacity: .85; }
 }
 
 section {
