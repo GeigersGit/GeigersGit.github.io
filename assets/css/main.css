@@ -8,9 +8,22 @@
     font-style: normal;
 }
 
-h1 span {
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    font: 100 1.3em "neon_tubes_2regular";
+.arrow {
+    position:absolute;
+    bottom:-120px;
+    left:48%;
+    height:50px;
+    width:50px;
+    display:none;
+}
+
+.flicker {
+    animation: pulse ease 200ms infinite;
+}
+
+#firstName, #lastName {
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+    font: 100 1.1em "neon_tubes_2regular";
 }
 
 h1 {
@@ -31,12 +44,13 @@ h1 {
         padding-top:100px;
     }
     h1 span {
-        font-size: .7em;
+        font-size:.7em;
     }
     .hidden-sm {
         display: none;
     }
 }
+
 
 .neon-grey {
     color: #333;
@@ -44,8 +58,9 @@ h1 {
 }
 
 .neon-red {
-    color: #eee !important;
-    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #f44, 0 0 0.5em #f44, 0 0 0.1em #f44, 0 10px 3px #000 !important;
+    color: #eee;
+    text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000 ;
+    animation: blink linear 4s infinite;
 }
 
 .neon-blue {
@@ -54,23 +69,89 @@ h1 {
 }
 
 
-
-.chromatic-text {
-    text-shadow: 3px 0px 1px #ff0000, -3px -0px 1px #0079ff, 0px -2px 1px green !important;
-    animation: chromaticMove 4500ms ease infinite, pulse ease 200ms infinite;
-}
-
-@keyframes gradientMove {
+@keyframes blink {
     0% {
-        background-size: 100% 4px
+        color: #333;
+        text-shadow: none;
     }
 
-    50% {
-        background-size: 100% 2px
+    19% {
+        color: #333;
+        text-shadow: none;
     }
 
-    100% {
-        background-size: 100% 4px
+    21% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+    }
+
+    21.5% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    22.5% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    23% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+    }
+
+    24% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    29% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    30% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+    }
+    33% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    34.5% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+    }
+
+    35% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    36% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+    }
+
+    38% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    38.5% {
+        color: #eee;
+        text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+    }
+
+    39% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    99% {
+        color: #333;
+        text-shadow: none;
     }
 }
 
@@ -98,20 +179,6 @@ h1 {
     }
 }
 
-@keyframes chromaticMove {
-    0% {
-        text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),0px 0px -2px rgba(12, 230, 251,1);
-    }
-
-    50% {
-        text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),-3px 2px 3px rgba(12, 230, 251,1);
-    }
-
-    100% {
-        text-shadow: 3px 2px 2px rgba(251, 12, 12,1), 0px -1px 3px rgba(12, 230, 79,1),2px -1px 2px rgba(12, 230, 251,1);
-    }
-}
-
 section {
     padding-top:50px !important;
 }
@@ -128,16 +195,6 @@ section {
 
 .video-container {
     box-shadow: 0px 0px 20px rgba(0,0,0,0.7);
-}
-
-.shadowAnimate {
-    /*box-shadow: 0 0px 20px rgba(0,0,0,0.75);*/
-}
-
-.shadowAnimate:hover {
-    /*box-shadow: 0 0px 60px rgba(255,255,255,0.1);
-    -webkit-transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
-    transition: all 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);*/
 }
 
 @media screen and (max-width: 736px) {
@@ -389,13 +446,15 @@ body {
 		transition: border-bottom-color 0.2s ease, color 0.2s ease;
 		text-decoration: none;
 		color: #eeeeee;
-		border-bottom: dotted 1px rgba(88, 88, 88, 0.5);
+		/*border-bottom: dotted 1px rgba(88, 88, 88, 0.5);*/
 	}
 
-		a:hover {
-			border-bottom-color: transparent;
-			color: #f2849e !important;
-		}
+        a:hover {
+            border-bottom-color: transparent;
+            /*color: #f2849e !important;*/
+            color: #eee;
+            text-shadow: 0 -40px 100px, 0 0 2px, 0 0 1em #ff349e, 0 0 0.5em #ff349e, 0 0 0.1em #ff349e, 0 10px 3px #000;
+        }
 
 	strong, b {
 		font-weight: 900;
